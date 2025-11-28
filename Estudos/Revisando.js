@@ -8,6 +8,11 @@ try {
   //decrement();
   //operadoresArit();
 }
+
+catch{
+    console.log("Ops... Ocorreu algum ERRO!");
+}
+
 finally {
   console.log("Processo finalizado...") 
 }
