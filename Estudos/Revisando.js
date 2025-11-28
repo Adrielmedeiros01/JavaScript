@@ -1,8 +1,7 @@
 // REVISÃO GERAL JS:
 function helloW(){
   // Output terminal;
-  console.log("Hello World!");
-  console.log("Inicializando o processamento..."); 
+  console.log("Hello World!"); 
 }
 function ternario(){
   // Variável let p/ valores não constantes;
