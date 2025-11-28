@@ -2,6 +2,8 @@
 try {
   helloW();
   //ternario();
+  //voto();
+  //parImpar();
   //increment();
   //decrement();
   //operadoresArit();
@@ -9,33 +11,6 @@ try {
 finally {
   console.log("Processo finalizado...") 
 }
-
-/*
-Comparações:
-==	equal to:
-    x == 8	false	
-    x == 5	true	
-    x == "5"	true	
-===	equal value and equal type:
-    x === 5	true	
-    x === "5"	false	
-!=	not equal:
-    x != 8	true	
-!==	not equal value or not equal type:	
-    x !== 5	false	
-    x !== "5"	true	
-    x !== 8	true	
-> greater than:
-	x > 8	false	
-< less than:
-	x < 8	true	
->= greater than or equal to:
-	x >= 8	false	
-<= less than or equal to:
-	x <= 8	true
-
-Todos os operadores de comparação acima também podem ser usados ​​em strings:
-*/
 
 // REVISÃO GERAL JS:
 function helloW(){
@@ -66,6 +41,9 @@ function output(){
 // Operadores aritméticos:
 function operadoresArit(){
     const prompt = require('prompt-sync')(); // Necessário para a entrada de dados pelo prompt;
+    //npm install prompt-sync // Para usar o prompt no terminal;
+    //Dentro do terminal, vá diretamente na pasta que o arquivo está e digite:
+    //node nome_do_arquivo.js
     function input(){   
         let var1 = prompt("Digite o primeiro valor:");
         let var2 = prompt("Digite o segundo valor: ");
@@ -126,3 +104,73 @@ function decrement(){
         console.log(i);
     }
 }
+function verifica(){
+    try {
+        helloWorld();
+        const num = prompt('Digite o valor:');
+        if(num < 0){
+            console.log("O número digitado é negativo!");
+        }
+        else if (num >= 0) {
+            console.log("O número digitado é positivo!");
+        }
+    }
+    finally {
+        console.log("Processo finalizado com sucesso...")
+    }
+}
+function voto(){
+    try {
+        helloWorld();
+        const idade = prompt(parseInt('Digite sua idade:'));
+        if(idade < 16){
+            console.log("Você ainda não pode voltar!");
+        }
+        else if(idade == 16 || idade == 17){
+            console.log("Você já pode voltar, mas não é obrigatório!");
+        }
+        else if(idade >= 18 || idade <= 70) {
+            console.log("Você é obrigado a votar!");
+        }
+    }
+    finally{
+        console.log("Processo finalizado com sucesso...")
+    }
+}
+function parImpar(){
+    const valor = prompt(parseInt('Digite um valor:'));
+    if(valor % 2 == 0){
+        console.log("O número é par!")
+    }
+    else {
+        console.log("O número é ímpar!")
+    }
+}
+
+
+/*
+Comparações:
+==	equal to:
+    x == 8	false	
+    x == 5	true	
+    x == "5"	true	
+===	equal value and equal type:
+    x === 5	true	
+    x === "5"	false	
+!=	not equal:
+    x != 8	true	
+!==	not equal value or not equal type:	
+    x !== 5	false	
+    x !== "5"	true	
+    x !== 8	true	
+> greater than:
+	x > 8	false	
+< less than:
+	x < 8	true	
+>= greater than or equal to:
+	x >= 8	false	
+<= less than or equal to:
+	x <= 8	true
+
+Todos os operadores de comparação acima também podem ser usados ​​em strings:
+*/
