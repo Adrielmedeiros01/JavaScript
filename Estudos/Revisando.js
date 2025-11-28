@@ -1,6 +1,10 @@
+// REVISÃO GERAL JS:
 
+
+// Tratamento de ERROS:
 try {
   helloW();
+  dataType();
   //ternario();
   //voto();
   //parImpar();
@@ -8,20 +12,36 @@ try {
   //decrement();
   //operadoresArit();
 }
-
 catch{
-    console.log("Ops... Ocorreu algum ERRO!");
+    console.log("Ops... Ocorreu algum ERRO!\n");
 }
 
 finally {
-  console.log("Processo finalizado...") 
+  console.log("Processo finalizado...\n") 
 }
 
-// REVISÃO GERAL JS:
+
+//Tipos de dados:
+function dataType(){
+    let a = "'Nome'";
+    let b = 5;
+    let c = []; // Objeto;
+    let d = {}; // Objeto;
+    let e = function nome(){}; // function;
+    let f = null; ///objeto;
+    console.log(`${a} = ${typeof(a)}\n`);
+    console.log(`${b} = ${typeof(b)}\n`);
+    console.log(`${c} = ${typeof(c)}\n`);
+    console.log(`${d} = ${typeof(d)}\n`);
+    console.log(`${e} = ${typeof(e)}\n`);
+    console.log(`${f} = ${typeof(f)}`);
+}
 function helloW(){
   // Output terminal;
   console.log("Hello World!"); 
+  console.log("--------------------------------------------------------\n");
 }
+//Ternário:
 function ternario(){
   // Variável let p/ valores não constantes;
   let v1 = 10;
@@ -50,6 +70,8 @@ function operadoresArit(){
     //Dentro do terminal, vá diretamente na pasta que o arquivo está e digite:
     //node nome_do_arquivo.js
     function input(){   
+        //let var1 = Number(prompt("Digite o primeiro valor:")); // Já convertido para números:
+        //let var2 = Number(prompt("Digite o segundo valor: "));
         let var1 = prompt("Digite o primeiro valor:");
         let var2 = prompt("Digite o segundo valor: ");
         if (isNaN(var1) || isNaN(var2)) {
@@ -62,7 +84,7 @@ function operadoresArit(){
         }
     }
     function escolha(){
-        console.log("1) somar, 2) dimunir, 3) multiplicar, 4) dividir, 5) modulo, 6) potência");
+        console.log("1) somar, 2) dimunir, 3) multiplicar, 4) dividir, 5) modulo, 6) potência\n");
         aux1 = parseInt(prompt("Digite o número da opção que deseja:"));
         if(aux1 === 1){
             let soma = var1 + var2;
@@ -89,7 +111,7 @@ function operadoresArit(){
             console.log(`A otência de de ${var1} elevado a ${var2} = ${potencia}`);
         }
         else{
-            console.log("OPS...tente novamente!");
+            console.log("OPS...tente novamente!\n");
             escolha();
         }
     }
@@ -151,7 +173,6 @@ function parImpar(){
         console.log("O número é ímpar!")
     }
 }
-
 
 /*
 Comparações:
