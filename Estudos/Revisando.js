@@ -29,12 +29,15 @@ function dataType(){
     let d = {}; // Objeto;
     let e = function nome(){}; // function;
     let f = null; ///objeto;
+    let txtrand = 5678;
+    let t = toString(txtrand); // Também da pra faze com [] || {};
     console.log(`${a} = ${typeof(a)}\n`);
     console.log(`${b} = ${typeof(b)}\n`);
     console.log(`${c} = ${typeof(c)}\n`);
     console.log(`${d} = ${typeof(d)}\n`);
     console.log(`${e} = ${typeof(e)}\n`);
     console.log(`${f} = ${typeof(f)}`);
+    console.log(`${txtrand} = ${typeof(txtrand)}: Tranformada em string = ${typeof(t)}`);
 }
 function helloW(){
   // Output terminal;
