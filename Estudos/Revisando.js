@@ -1,3 +1,42 @@
+
+try {
+  helloW();
+  //ternario();
+  //increment();
+  //decrement();
+  //operadoresArit();
+}
+finally {
+  console.log("Processo finalizado...") 
+}
+
+/*
+Comparações:
+==	equal to:
+    x == 8	false	
+    x == 5	true	
+    x == "5"	true	
+===	equal value and equal type:
+    x === 5	true	
+    x === "5"	false	
+!=	not equal:
+    x != 8	true	
+!==	not equal value or not equal type:	
+    x !== 5	false	
+    x !== "5"	true	
+    x !== 8	true	
+> greater than:
+	x > 8	false	
+< less than:
+	x < 8	true	
+>= greater than or equal to:
+	x >= 8	false	
+<= less than or equal to:
+	x <= 8	true
+
+Todos os operadores de comparação acima também podem ser usados ​​em strings:
+*/
+
 // REVISÃO GERAL JS:
 function helloW(){
   // Output terminal;
@@ -18,9 +57,6 @@ function ternario(){
     console.log(`${v1} é maior que ${v2}!`);   
   }
 }
-
-
-
 //output:
 function output(){
     console.log("Hello"); // No console;
@@ -89,43 +125,4 @@ function decrement(){
     for(let i = 10; i>=1; i--){
         console.log(i);
     }
-}
-
-
-/*
-Comparações:
-==	equal to:
-    x == 8	false	
-    x == 5	true	
-    x == "5"	true	
-===	equal value and equal type:
-    x === 5	true	
-    x === "5"	false	
-!=	not equal:
-    x != 8	true	
-!==	not equal value or not equal type:	
-    x !== 5	false	
-    x !== "5"	true	
-    x !== 8	true	
-> greater than:
-	x > 8	false	
-< less than:
-	x < 8	true	
->= greater than or equal to:
-	x >= 8	false	
-<= less than or equal to:
-	x <= 8	true
-
-Todos os operadores de comparação acima também podem ser usados ​​em strings:
-*/
-
-try {
-  //helloW();
-  //ternario();
-  //increment();
-  //decrement();
-  //operadoresArit();
-}
-finally {
-  console.log("Processo finalizado...") 
 }
